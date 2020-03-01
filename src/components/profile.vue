@@ -11,50 +11,50 @@
         <li>
           <router-link to="/ff" tag="li">
             <img src="../assets/img/WEBqianduan.svg" alt="web" />
-            Web</router-link
-          >
+            Web
+          </router-link>
         </li>
         <li>
           <router-link to="/dd" tag="li">
             <img src="../assets/img/shujujiegou.svg" alt="web" />
-            D-Structure</router-link
-          >
+            D-Structure
+          </router-link>
         </li>
         <li>
           <router-link to="/ff" tag="li">
             <img src="../assets/img/wangluo.svg" alt="web" />
-            C-Network</router-link
-          >
+            C-Network
+          </router-link>
         </li>
         <li>
           <router-link to="/fsdf" tag="li">
             <img src="../assets/img/jisuanji.svg" alt="web" />
-            C-Organization</router-link
-          >
+            C-Organization
+          </router-link>
         </li>
         <li>
           <router-link to="/fsdf" tag="li">
             <img src="../assets/img/Linux.svg" alt="web" />
-            Lunix</router-link
-          >
+            Lunix
+          </router-link>
         </li>
         <li>
           <router-link to="/fsfsf" tag="li">
             <img src="../assets/img/shujuku.svg" alt="web" />
-            SQL</router-link
-          >
+            SQL
+          </router-link>
         </li>
         <li>
           <router-link to="/fsdfef" tag="li">
             <img src="../assets/img/shuxue.svg" alt="web" />
-            Math</router-link
-          >
+            Math
+          </router-link>
         </li>
         <li>
           <router-link to="/fefw" tag="li">
             <img src="../assets/img/qita.svg" alt="web" />
-            Others</router-link
-          >
+            Others
+          </router-link>
         </li>
       </ul>
     </nav>
@@ -69,7 +69,7 @@
 </template>
 <script>
 export default {
-  name: 'profile'
+  name: "profile"
   // 侧标导航栏以及简短的个人信息
 };
 </script>
@@ -81,7 +81,7 @@ export default {
   box-shadow: 0 1px 9px rgb(122, 104, 104);
   padding-right: 8px;
   padding-left: 8px;
-  position: relative;
+  position: fixed;
 }
 #avatar {
   /* border: 1px solid red; */
@@ -94,7 +94,7 @@ export default {
 }
 #avatar :hover {
   transform: scale(1.4, 1.4);
-  transition-duration: 800ms
+  transition-duration: 800ms;
 }
 #avatar img {
   width: 80px;
@@ -112,19 +112,23 @@ ul > li {
   margin-top: 1em;
   line-height: 2em;
   list-style: none;
-  box-shadow: 1px -1px 8px #DDD;
+  box-shadow: 1px -1px 8px #ddd;
   /* padding: 0 3px; */
   border-radius: 12px;
-  border:1px solid rgb(218, 216, 216)
+  border: 1px solid rgb(218, 216, 216);
   /* ！ 如何把图标和文字对齐？？ */
 }
 ul > li :hover {
-  background-color: #DDD;
+  background-color: #ddd;
 }
 li > img {
   height: 1.5em;
   display: inline-block;
-  vertical-align: middle
+  vertical-align: middle;
+}
+ul > li > li {
+  display: flex;
+  align-items: center;
 }
 footer {
   position: absolute;

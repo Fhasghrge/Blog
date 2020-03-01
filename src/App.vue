@@ -1,15 +1,19 @@
 <template>
   <div id="app">
     <Profile></Profile>
+    <router-view></router-view>
+    <BackManage></BackManage>
   </div>
 </template>
 
 <script>
 import Profile from './components/profile'
+import BackManage from './components/backManage'
 export default {
   name: "App",
   components: {
-    Profile
+    Profile,
+    BackManage
   }
 };
 </script>
