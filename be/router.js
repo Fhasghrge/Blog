@@ -12,6 +12,7 @@ router.get('/blogs', (req, res) => { // 查看所有博客
 })
 
 router.post('/blogs/new', (req, res) => { // 增加博客
+  req.body.date = new Date()
   new Blog(req.body).save((err, ret) => {
     if (err) {
       return res.status(500).send('Server Error')

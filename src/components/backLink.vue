@@ -1,5 +1,5 @@
 <template>
-  <div id="bManage">
+  <div id="bLink">
     <router-link to="/manage" tag="div">
       <canvas id="canvas" width="95" height="95" ref="cvs"></canvas>
     </router-link>
@@ -7,7 +7,7 @@
 </template>
 <script>
 export default {
-  name: 'bManage',
+  name: 'bLink',
   mounted() {
     /** @type {HTMLCanvasElement} */
     let canvas = this.$refs.cvs;
@@ -35,12 +35,11 @@ export default {
 };
 </script>
 <style scoped>
-#bManage {
+#bLink {
   position: absolute;
   right: 0;
-  /* border: 1px solid red; */
 }
-#bManage :hover {
+#bLink :hover {
   transform: scale(1.03,1.03)
 }
 </style>

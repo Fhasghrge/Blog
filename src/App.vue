@@ -2,18 +2,18 @@
   <div id="app">
     <Profile></Profile>
     <router-view></router-view>
-    <BackManage></BackManage>
+    <BLink></BLink>
   </div>
 </template>
 
 <script>
 import Profile from './components/profile'
-import BackManage from './components/backManage'
+import BLink from './components/backLink'
 export default {
   name: "App",
   components: {
     Profile,
-    BackManage
+    BLink
   }
 };
 </script>
