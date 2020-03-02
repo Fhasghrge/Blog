@@ -9,6 +9,6 @@ app.use('/public/', express.static('./public/'))
 // router(app)
 app.use(router) // 把路由挂载到服务器
 
-app.listen(80, () => {
+app.listen(8080, () => {
   console.log('running...')
 })

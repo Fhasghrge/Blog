@@ -9,7 +9,7 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/ff" tag="li">
+          <router-link to="/catalog" tag="li">
             <img src="../assets/img/WEBqianduan.svg" alt="web" />
             Web
           </router-link>
