@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueShowdown from 'vue-showdown'
 import router from './router/index'
 import axios from 'axios'
+import less from 'less'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
@@ -14,6 +15,7 @@ Vue.use(VueShowdown, {
     emoji: false,
   },
 })
+Vue.use(less)
 new Vue({
   router,
   render: h => h(App),

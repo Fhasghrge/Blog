@@ -24,12 +24,9 @@ export default {
 </script>
 <style scoped>
 #article {
-  /* border: 1px solid red; */
-  position: absolute;
-  left: 570px;
-  right: 100px;
   padding: 20px 100px;
   box-shadow: 1px 1px 8px #DDD;
+  flex: 8;
 }
 #title {
   text-align: center;
