@@ -42,4 +42,9 @@ export default {
 #bLink :hover {
   transform: scale(1.03,1.03)
 }
+@media only screen and (max-width: 1268px) {
+  #bLink {
+    display: none;
+  }
+}
 </style>

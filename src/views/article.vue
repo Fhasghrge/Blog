@@ -7,48 +7,57 @@
         <div id="date">Date-Time: 2020.3.1</div>
       </div>
     </header>
-    <div id="main">
-      <VueShowdown :markdown="md"/>
-    </div>
-  </div>  
+    <main>
+      <VueShowdown :markdown="md" />
+    </main>
+  </div>
 </template>
 <script>
 export default {
-  name: "article",
+  name: 'article',
   data() {
     return {
       md: '# Hello World!'
-    }
+    };
   }
 };
 </script>
-<style scoped>
+<style lang="less" scoped>
 #article {
   padding: 20px 100px;
-  box-shadow: 1px 1px 8px #DDD;
+  box-shadow: 1px 1px 8px #ddd;
   flex: 8;
+  header {
+    padding: 2px 0;
+    border-radius: 17px;
+    box-shadow: 1px 1px 8px #ddd;
+    #title {
+      text-align: center;
+      font-size: 2.4em;
+      font-family: STKaiti;
+    }
+    #info {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      div {
+        margin: 0 40px;
+      }
+    }
+  }
+  main {
+    margin-top: 3vh;
+  }
+  @media only screen and (max-width: 615px) {
+    & {
+      padding: 10px 20px;
+    }
+    header > #info {
+      margin: 10px;
+      div {
+        margin: 0 10px;
+      }
+    }
+  }
 }
-#title {
-  text-align: center;
-  font-size: 2.4em;
-  font-family: STKaiti
-}
-#info{ 
-  display: flex;
-  justify-content: center;
-  margin: 20px
-}
-#info div {
-  margin: 0 40px
-}
-header {
-  /* border: 1px solid red; */
-  padding: 2px 0;
-  border-radius: 17px;
-  box-shadow: 1px 1px 8px #DDD
-}
-#main {
-  margin-top: 3vh
-}
-
 </style>

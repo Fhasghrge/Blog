@@ -83,6 +83,11 @@ export default {
   flex: 2;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 615px) {
+    & {
+      display: none;
+    }
+  }
   header {
     padding: 4vh 0 0;
     box-sizing: border-box;
@@ -111,7 +116,6 @@ export default {
   }
   nav {
     flex: 5;
-    // background-color: pink;
     ul {
       display: flex;
       flex-direction: column;
@@ -150,7 +154,7 @@ export default {
           }
         }
       }
-      li :hover {
+      & > li :hover {
         background: linear-gradient(to right, white, pink);
       }
     }
